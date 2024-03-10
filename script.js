@@ -47,9 +47,20 @@ console.log(`My list of items after shift`, myProducts);
 const indexOfPantaloni= myProducts.indexOf('Pantaloni');
 console.log(`Elem Pantaloni se afla in lista la indexul ${indexOfPantaloni}`);
 
+// .slice returneaza o portiune a array-ului. Subset al unui array
 
+const subsetOfMyProducts = myProducts.slice(1, 3);
+console.log(`Subset from 1 to 3 is:`, subsetOfMyProducts);
 
+// .splice modif cont array-ului adaugand elem la index start
 
+myProducts.splice(2, 1, "Camasa");
+console.log(`My products after splice (2, 1, "Camasa") is`, myProducts);
+
+// Concatenare de doua sau mai multe array-uri
+
+const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
+console.log(`After concatenation of subset`, concatenatedArrays);
 
 
 
