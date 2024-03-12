@@ -63,4 +63,13 @@ const concatenatedArrays = myProducts.concat(subsetOfMyProducts);
 console.log(`After concatenation of subset`, concatenatedArrays);
 
 
+// Date de tip Object
+// În JavaScript, obiectele sunt structuri de date complexe care permit stocarea și organizarea datelor în perechi cheie-valoare. 
+
+let person = {
+    name: "John",
+    surname: "Doe",
+    
+};
+
 
