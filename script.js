@@ -123,6 +123,40 @@ const areEqual = obj1.a === obj2.a && obj2.b === obj3.b;
 console.log(`areEqual: `, areEqual);
 
 
+// stergere proprietate Object
 
+delete person.age;
+console.log(`person: `, person);
 
+// JavaScript Object Date
+// Obiectul Date în JavaScript este folosit pentru a lucra cu date și ore în aplicații web. Acest obiect oferă metode pentru a accesa și manipula data și ora, precum și pentru a efectua operații cu date specifice
 
+const date = new Date();
+console.log(`date: `, date);
+
+// accesare an get.FullYear metoda de lua anual
+
+console.log(`year: `, date.getFullYear());
+
+// accesare luna
+
+const months = ["Ianuarie", "Februarie", "Martie", "Aprilie"];
+const currentMonthIndex = date.getMonth();
+console.log(`month: `, months[currentMonthIndex]);
+console.log(`month: `, date.getMonth());
+
+// accesare zi
+
+console.log(`day of the month: `, date.getDate());
+
+// accesare ora 
+
+console.log(`hours: `, date.getHours());
+
+// accesare minute
+
+console.log(`minutes: `, date.getMinutes());
+
+// accesare secunde
+
+console.log(`seconds: `, date.getSeconds());
