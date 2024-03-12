@@ -160,3 +160,26 @@ console.log(`minutes: `, date.getMinutes());
 // accesare secunde
 
 console.log(`seconds: `, date.getSeconds());
+
+// Componentele datei și orei pot fi modificate utilizând metodele adecvate:
+
+//let currentDate = 2024;
+//currentDate.setFullYear(2024);
+//console.log(`current year: `, currentDate.setFullYear()); // seteaza anul
+
+// JavaScript Date - Operații
+
+let currentDate2 = new Date();
+currentDate2.setDate(currentDate2.getDate() + 5);
+console.log(`currentDate2: `, currentDate2);
+
+let otherDate = new Date(`2022-02-10`);
+let differenceInMilliseconds = otherDate - currentDate2;
+console.log(`milliseconds: `, differenceInMilliseconds);
+
+// JavaScript Date - Timestamps
+
+let currentDate3 = new Date();
+let timestamp = currentDate3.getTime();
+let newDate = new Date(timestamp);
+console.log(`timestamp: `, timestamp);
